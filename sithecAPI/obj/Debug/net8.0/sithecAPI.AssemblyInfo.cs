@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sithecAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+200b246800b9ff122dc462f163890d17f8824d6d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f58f5bdf8d1e90af0af356c868af6f1565c09cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("sithecAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sithecAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -30,3 +30,4 @@ C:\Users\jorge\source\repos\sithecAPI\sithecAPI\obj\Debug\net8.0\refint\sithecAP
 C:\Users\jorge\source\repos\sithecAPI\sithecAPI\obj\Debug\net8.0\sithecAPI.pdb
 C:\Users\jorge\source\repos\sithecAPI\sithecAPI\obj\Debug\net8.0\sithecAPI.genruntimeconfig.cache
 C:\Users\jorge\source\repos\sithecAPI\sithecAPI\obj\Debug\net8.0\ref\sithecAPI.dll
+C:\Users\jorge\source\repos\sithecAPI\sithecAPI\obj\Debug\net8.0\sithecAPI.sourcelink.json

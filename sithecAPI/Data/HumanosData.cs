@@ -1,4 +1,4 @@
-﻿using sithecAPI.Models;
+﻿using sithecAPI.Models.Entities;
 
 namespace sithecAPI.Data
 {
