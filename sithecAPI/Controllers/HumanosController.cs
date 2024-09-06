@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using sithecAPI.Data;
 using sithecAPI.Models.Entities;
+using sithecAPI.Services.interfaces;
 
 namespace sithecAPI.Controllers
 {
@@ -9,100 +10,84 @@ namespace sithecAPI.Controllers
     [Route("api/humanos")]
     public class HumanosController : ControllerBase
     {
-        private readonly ApiContext _context;
+        private readonly IHumanosService _humanosService;
 
-        public HumanosController(ApiContext context)
+        public HumanosController(IHumanosService humanosService)
         {
-            _context = context;
+            _humanosService = humanosService;
         }
 
         [HttpGet("mock")]
         public ActionResult<List<Humano>> GetHumanosMock()
         {
-            List<Humano> humanos = HumanosData.GetHumanos();
+            var humanos = _humanosService.GetHumanosMock();
             return Ok(humanos);
         }
 
         [HttpGet]
         public async Task<ActionResult<Humano>> GetHumanos()
         {
-            var humanos = await _context.Humanos.ToListAsync();
+            var humanos = await _humanosService.GetHumanosAsync();
 
             return Ok(humanos);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Humano>> GetHumanoById(int id)
+        public async Task<ActionResult<Humano>> GetHumanoById(Guid id)
         {
-            var humano = await _context.Humanos.FindAsync(id);
-
-            if (humano == null)
+            try
             {
-                throw new KeyNotFoundException($"Customer with ID {id} not found.");
+                var humano = await _humanosService.GetHumanoByIdAsync(id);
+                return Ok(humano);
             }
-
-            return Ok(humano);
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
 
         [HttpPost]
         public async Task<ActionResult<Humano>> CreateHumano([FromBody] Humano humano)
         {
-            var newHumano = await _context.Humanos.FirstOrDefaultAsync(u => u.Nombre == humano.Nombre && u.Edad == humano.Edad && u.Altura == humano.Altura);
-
-            if (newHumano != null)
+            if (!ModelState.IsValid)
             {
-                return Conflict("Ya existe el humano registrado en la BD.");
+                return BadRequest(new { status = "Error", Message = ModelState });
             }
 
-            _context.Humanos.Add(humano);
+            var newHumano = await _humanosService.CreateHumanoAsync(humano);
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException ex)
-            {
-                return StatusCode(500, $"Error interno del sistema {ex.Message}");
-            }
-
-            return CreatedAtAction(nameof(CreateHumano), new {id= humano.Id}, humano);
+            return CreatedAtAction(nameof(CreateHumano), new { id = newHumano.Id }, new { status = "Ok", result = humano });
         }
 
         [HttpPut]
-        public async Task<ActionResult> UpdateHumano(string id, [FromBody] Humano humano)
+        public async Task<ActionResult> UpdateHumanoById(Guid id, [FromBody] Humano humano)
         {
-            if (id != humano.Id.ToString())
+            if (id != humano.Id)
             {
-                return BadRequest(new {status="Error"});
+                return BadRequest(new { status = "Error", result = "Humano ID no coincide." });
             }
 
-            var humanosUpdated = await _context.Humanos.FindAsync(id);
+            var humanoUpdated = await _humanosService.UpdateHumanoByIdAsync(id, humano);
 
-            if (humanosUpdated == null)
+            if (!humanoUpdated)
             {
                 return NotFound();
             }
 
-            await _context.SaveChangesAsync();
-
-            return Ok(id);
+            return Ok(new { status = "Ok", result = humanoUpdated });
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteHumano(Guid id)
+        public async Task<ActionResult> DeleteHumanoById(Guid id)
         {
-            var humano = await _context.Humanos.FindAsync(id);
+            var humano = await _humanosService.DeleteHumanoByIdAsync(id);
 
-            if (humano == null)
+            if (!humano)
             {
                 return NotFound();
             }
 
-            _context.Humanos.Remove(humano);
-
-            await _context.SaveChangesAsync();
-
-            return Ok(new { status = "Ok", message = "Humano eliminado exitosamente" });
+            return Ok(new { status = "Ok", result = "Humano eliminado exitosamente" });
         }
     }
 }

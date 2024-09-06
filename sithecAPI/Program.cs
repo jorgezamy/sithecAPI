@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using sithecAPI.Data;
+using sithecAPI.Services;
+using sithecAPI.Services.interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ApiContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("connection")));
+
+builder.Services.AddScoped<IHumanosService, HumanosService>();
 
 var app = builder.Build();
 
