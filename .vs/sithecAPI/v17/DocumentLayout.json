@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49ED3479-313B-4D14-AEC5-8448C36FD5F0}|sithecAPI\\sithecAPI.csproj|c:\\users\\jorge\\source\\repos\\sithecapi\\sithecapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{49ED3479-313B-4D14-AEC5-8448C36FD5F0}|sithecAPI\\sithecAPI.csproj|solutionrelative:sithecapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\Migrations\\20240906010426_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sithecAPI\\Migrations\\20240906010426_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49ED3479-313B-4D14-AEC5-8448C36FD5F0}|sithecAPI\\sithecAPI.csproj|c:\\users\\jorge\\source\\repos\\sithecapi\\sithecapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49ED3479-313B-4D14-AEC5-8448C36FD5F0}|sithecAPI\\sithecAPI.csproj|solutionrelative:sithecapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49ED3479-313B-4D14-AEC5-8448C36FD5F0}|sithecAPI\\sithecAPI.csproj|c:\\users\\jorge\\source\\repos\\sithecapi\\sithecapi\\models\\entities\\humano.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49ED3479-313B-4D14-AEC5-8448C36FD5F0}|sithecAPI\\sithecAPI.csproj|solutionrelative:sithecapi\\models\\entities\\humano.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49ED3479-313B-4D14-AEC5-8448C36FD5F0}|sithecAPI\\sithecAPI.csproj|c:\\users\\jorge\\source\\repos\\sithecapi\\sithecapi\\controllers\\operacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49ED3479-313B-4D14-AEC5-8448C36FD5F0}|sithecAPI\\sithecAPI.csproj|solutionrelative:sithecapi\\controllers\\operacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49ED3479-313B-4D14-AEC5-8448C36FD5F0}|sithecAPI\\sithecAPI.csproj|c:\\users\\jorge\\source\\repos\\sithecapi\\sithecapi\\models\\requests\\operacionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49ED3479-313B-4D14-AEC5-8448C36FD5F0}|sithecAPI\\sithecAPI.csproj|solutionrelative:sithecapi\\models\\requests\\operacionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49ED3479-313B-4D14-AEC5-8448C36FD5F0}|sithecAPI\\sithecAPI.csproj|c:\\users\\jorge\\source\\repos\\sithecapi\\sithecapi\\utilities\\operationsutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49ED3479-313B-4D14-AEC5-8448C36FD5F0}|sithecAPI\\sithecAPI.csproj|solutionrelative:sithecapi\\utilities\\operationsutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49ED3479-313B-4D14-AEC5-8448C36FD5F0}|sithecAPI\\sithecAPI.csproj|c:\\users\\jorge\\source\\repos\\sithecapi\\sithecapi\\controllers\\humanoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49ED3479-313B-4D14-AEC5-8448C36FD5F0}|sithecAPI\\sithecAPI.csproj|solutionrelative:sithecapi\\controllers\\humanoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20240906010426_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\Migrations\\20240906010426_InitialCreate.cs",
-              "RelativeDocumentMoniker": "sithecAPI\\Migrations\\20240906010426_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\Migrations\\20240906010426_InitialCreate.cs",
-              "RelativeToolTip": "sithecAPI\\Migrations\\20240906010426_InitialCreate.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T01:04:26.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\Program.cs",
-              "RelativeDocumentMoniker": "sithecAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\Program.cs",
-              "RelativeToolTip": "sithecAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAACEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T01:01:52.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Humano.cs",
-              "DocumentMoniker": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\Models\\Entities\\Humano.cs",
-              "RelativeDocumentMoniker": "sithecAPI\\Models\\Entities\\Humano.cs",
-              "ToolTip": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\Models\\Entities\\Humano.cs",
-              "RelativeToolTip": "sithecAPI\\Models\\Entities\\Humano.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T01:00:02.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "sithecAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\appsettings.json",
-              "RelativeToolTip": "sithecAPI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-06T00:53:58.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OperationsUtilities.cs",
-              "DocumentMoniker": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\utilities\\OperationsUtilities.cs",
-              "RelativeDocumentMoniker": "sithecAPI\\utilities\\OperationsUtilities.cs",
-              "ToolTip": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\utilities\\OperationsUtilities.cs",
-              "RelativeToolTip": "sithecAPI\\utilities\\OperationsUtilities.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAABKAAAA",
+              "Title": "HumanosController.cs",
+              "DocumentMoniker": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\Controllers\\HumanosController.cs",
+              "RelativeDocumentMoniker": "sithecAPI\\Controllers\\HumanosController.cs",
+              "ToolTip": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\Controllers\\HumanosController.cs",
+              "RelativeToolTip": "sithecAPI\\Controllers\\HumanosController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAIwGYAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T19:36:14.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OperacionesController.cs",
-              "DocumentMoniker": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\Controllers\\OperacionesController.cs",
-              "RelativeDocumentMoniker": "sithecAPI\\Controllers\\OperacionesController.cs",
-              "ToolTip": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\Controllers\\OperacionesController.cs",
-              "RelativeToolTip": "sithecAPI\\Controllers\\OperacionesController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T19:34:08.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OperacionRequest.cs",
-              "DocumentMoniker": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\Models\\Requests\\OperacionRequest.cs",
-              "RelativeDocumentMoniker": "sithecAPI\\Models\\Requests\\OperacionRequest.cs",
-              "ToolTip": "C:\\Users\\jorge\\source\\repos\\sithecAPI\\sithecAPI\\Models\\Requests\\OperacionRequest.cs",
-              "RelativeToolTip": "sithecAPI\\Models\\Requests\\OperacionRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T17:24:58.454Z",
+              "WhenOpened": "2024-09-06T01:06:51.131Z",
               "EditorCaption": ""
             }
           ]

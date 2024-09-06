@@ -26,7 +26,7 @@ namespace sithecAPI.Controllers
         {
             if (operaciones == null)
             {
-                return BadRequest("La solicitud no puede estar vacía.");
+                return BadRequest(new { status = "Error", Message = "La solicitud no puede estar vacía." });
             }
 
             try
