@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using sithecAPI.Models.Entities;
+using System.Data;
 
 namespace sithecAPI.Data
 {
@@ -8,5 +10,7 @@ namespace sithecAPI.Data
         {
 
         }
+
+        public DbSet<Humano> Humanos { get; set; }
     }
 }
